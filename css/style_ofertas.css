@@ -1,0 +1,546 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;700&display=swap');
+
+
+#oferta {       
+    width: 505px;
+    height: 700px;
+    margin: auto;
+    position: relative;
+    pointer-events: none;
+    
+}
+
+#imagem_cabecalho {
+    
+    position: absolute;
+    width: auto;        
+    max-width: 100%; /* Defina a largura máxima para não exceder a largura da oferta */
+    max-height: 40%; /* Defina a altura máxima para não exceder a altura da oferta */
+    top: 0;
+}
+#imagem_calendario {
+    position: absolute;
+    width: auto;        
+    max-width: 6%; /* Defina a largura máxima para não exceder a largura da oferta */
+    max-height: 40%; /* Defina a altura máxima para não exceder a altura da oferta */
+    top: 61%;
+    left: 18%;
+}
+#lmpm{
+    position: absolute;
+    max-width: 90%;
+    max-height: 30%;
+    text-align: center;
+    top: 36%;    
+    left: 45%;
+    font-size: 20px;
+    
+}
+#txt_pers_lmpm {
+    margin-top: 15px;
+    margin-bottom: 15px;
+    padding: 10px;
+    border-bottom: 1px solid;
+    border-top: 1px solid;
+    font-size: 15px;
+   
+   
+}
+.vlr_lmpm{
+    position: absolute;
+    top: 55%;  
+    left: 54%;  
+    transform: translate(-10%, -50%);
+    text-align: center;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 45px;
+    color: red;
+    font-weight: 700;
+}
+
+.descricao_of_valida {
+    position: absolute;
+    top: 64%;
+    left: 21%; 
+    width: 300px;
+    text-align: center;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 15px;
+    font-weight: 600;
+    
+}
+#imagem_produto {
+    position: absolute;
+    top: 50%;
+    left: 22%;
+    transform: translate(-50%, -50%);
+    max-width: 100%; /* Define a largura máxima */
+    max-height: 100%; /* Define a altura máxima */
+    width: auto;
+    height: auto;
+}
+
+@media (orientation: portrait) {
+    #imagem_produto {
+        max-height: 80%; /* Ajuste a altura máxima para imagens em retrato */
+    }
+}
+
+@media (orientation: landscape) {
+    #imagem_produto {
+        max-width: 40%; /* Ajuste a largura máxima para imagens em paisagem */
+    }
+}
+.descricao_produto {
+    position: absolute;
+    top: 26%;
+    left: 10%; 
+    width: 500px;
+    transform: translate(-10%, -50%);
+    text-align: center;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: large;
+    font-weight: 600;
+    
+}
+.cat_produto {
+    position: absolute;
+    top: 34%;
+    left: 62%;
+    transform: translate(-10%, -50%);
+    text-align: center;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 15px;
+    font-weight: 600;
+}
+.preco_produto {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-10%, -50%);
+    text-align: center;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 50px;
+    color: red;
+    font-weight: 700;
+}
+#msg_desc_atacado {
+    position: absolute;
+    top: 62%;
+    left: 57%;
+    transform: translate(-10%, -50%);
+    text-align: center;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 12px;
+    color: black;
+    font-weight: 700;
+}
+.preco_atacado_varejo {
+    
+    position: absolute;
+    top: 57%;
+    left: 58%;
+    transform: translate(-10%, -50%);
+    text-align: center;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 38px;
+    color: red;
+    font-weight: 700;
+    
+}
+.preco_varejo_2 {
+  
+    position: absolute;
+    top: 43%;
+    left: 58%;
+    transform: translate(-10%, -50%);
+    text-align: center;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 38px;
+    color: red;
+    font-weight: 700;
+    border-bottom: 1px solid black;
+    padding-bottom: 8px;
+ 
+}
+#txt_atacado{
+    position: absolute;
+    top: 51%;
+    left: 66%;
+    transform: translate(-10%, -50%);
+    text-align: center;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 18px;  
+    font-weight: 700;   
+    padding-right: 8px;
+    
+}
+.txt_varejo{
+    position: absolute;
+    top: 37%;
+    left: 66%;
+    transform: translate(-10%, -50%);
+    text-align: center;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 18px;   
+    font-weight: 700;   
+    padding-right: 8px;
+    
+}
+#imagem_rodape {
+    position: absolute; /* Mudança: use 'absolute' para posicionar a imagem dentro da div oferta */
+    width: auto;  
+    max-width: 100%; /* Defina a largura máxima para não exceder a largura da oferta */
+    max-height: 80%; /* Defina a altura máxima para não exceder a altura da oferta */
+    bottom: 120px; /* Adição: alinha a imagem no rodapé da div oferta */
+}
+#endereco {
+    position: absolute; /* Mudança: use 'absolute' para posicionar a imagem dentro da div oferta */
+    width: auto;     
+    max-width: 100%; /* Defina a largura máxima para não exceder a largura da oferta */
+    max-height: 100%; /* Defina a altura máxima para não exceder a altura da oferta */
+    bottom: 0; /* Adição: alinha a imagem no rodapé da div oferta */
+}
+#painel_controle{
+    display: relative;
+   
+    width: 300px;
+    height: 600px;
+    margin-left: 80px;
+    float: left;
+}
+p{
+    text-align: center;
+    margin: auto;
+}
+#botao{
+    display: relative;
+    margin-left: 30px;
+    margin-top:5px;
+   
+}
+#atacado{
+    font-size: 18px;
+    margin-bottom: 5px;
+
+}
+
+.preco_varejo_c_atacadao {
+  
+    position: absolute;
+    top: 40%;
+    left: 55%;
+    transform: translate(-10%, -50%);
+    text-align: center;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 40px;
+    color: red;
+    font-weight: 700;
+    
+ 
+}
+.tag_cart_atacadao {
+  
+    position: absolute;
+    top: 52%;
+    left: 54%;
+    transform: translate(-10%, -50%);
+    border: 3px solid black;
+    background-color: blueviolet;
+    border-radius: 10px;
+    width: 190px;
+    height: 88px;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 13px;
+    color: white;
+    
+    text-align: center;
+ 
+}
+.tag_branca_cart {
+    
+    position: absolute;   
+    background-color: white;
+    width: 185px;
+    height: 41px;
+    border-radius: 10px;   
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 13px;
+    color: black;    
+    text-align: center;
+    margin-top: 3px;
+    font-weight: 600;
+    
+ 
+}
+.valor_desc_cartao {
+    
+    position: absolute;   
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 30px;
+    color: red;    
+    text-align: center;
+    margin-top: -2px;
+    font-weight: 700;
+    left: 35px;
+    
+ 
+}
+.desc_pr_atacado {
+    
+    position: absolute;   
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 15px;
+    color: black;    
+    text-align: center;
+    margin-top: 5px;
+    font-weight: 700;
+    left: 50%;
+    top: 60%;
+ 
+}
+/*########################  Ofertas X2  ######################*/
+
+
+#img_produto_1 {
+  
+    position: absolute;
+    max-width: 160px;
+    max-height: 160px;
+    top: 45%;     
+    left: 3%;
+    transform: translate(30%, -50%);
+    padding-right: 65px;
+    
+   
+}
+#descricao_x2_1 {
+    position: absolute;
+    top: 28%;
+    left: 6%; 
+    width: 239px;
+   
+    transform: translate(-10%, -50%);
+    text-align: center;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 15px;
+    font-weight: 600;
+
+    
+}
+#preco_x2_1 {
+    position: absolute;
+    top: 61%;
+    left: 16%;
+    transform: translate(-10%, -50%);
+    text-align: center;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 30px;
+    color: red;
+    font-weight: 700;
+}
+
+#img_produto_2 {
+  
+    position: absolute;
+    max-width: 160px;
+    max-height: 160px;
+    top: 45%;     
+    left: 46%;   
+    transform: translate(30%, -50%);
+    padding-right: 65px;
+    
+   
+}
+
+#descricao_x2_2 {
+    position: absolute;
+  
+    top: 28%;
+    left: 56.5%; 
+    width: 239px;
+    transform: translate(-10%, -50%);
+    text-align: center;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 15px;
+    font-weight: 600;
+
+    
+}
+#preco_x2_2 {
+    position: absolute;
+    top: 61%;
+    left: 65%;
+    transform: translate(-10%, -50%);
+    text-align: center;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 30px;
+    color: red;
+    font-weight: 700;
+}
+
+/**** Ofertas X4 ****/
+
+#img_produto_x4_1 {
+  
+    position: absolute;
+    max-width: 135px;
+    max-height: 135px;
+    top: 32%;     
+    left: -8%;   
+    transform: translate(30%, -50%);
+    padding-right: 65px;
+    
+   
+}
+#descricao_x4_1 {
+
+    position: absolute;
+    top: 30%;
+    left: 23%; 
+    width: 150px;   
+    transform: translate(-10%, -50%);
+    text-align: center;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 13px;
+    font-weight: 600;
+
+    
+}
+#preco_x4_1 {
+    position: absolute;
+    top: 39%;
+    left: 22%;
+    transform: translate(-10%, -50%);
+    text-align: center;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 27px;
+    color: red;
+    font-weight: 700;
+}
+
+#img_produto_x4_2 {
+  
+    position: absolute;
+    max-width: 135px;
+    max-height: 135px;
+    top: 33%;     
+    left: 38%;   
+    transform: translate(30%, -50%);
+    padding-right: 65px;
+    
+   
+}
+#descricao_x4_2 {
+    position: absolute;
+    top: 30%;
+    left: 73%; 
+    width: 150px;   
+    transform: translate(-10%, -50%);
+    text-align: center;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 13px;
+    font-weight: 600;
+
+    
+}
+#preco_x4_2 {
+    position: absolute;
+    top: 39%;
+    left: 73%;
+    transform: translate(-10%, -50%);
+    text-align: center;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 27px;
+    color: red;
+    font-weight: 700;
+}
+
+
+#img_produto_x4_3 {
+  
+    position: absolute;
+    max-width: 135px;
+    max-height: 135px;
+    top: 53%;     
+    left: -7.5%;   
+    transform: translate(30%, -50%);
+    padding-right: 65px;
+    
+   
+}
+#descricao_x4_3{
+    position: absolute;
+    top: 50%;
+    left: 23%; 
+    width: 150px;   
+    transform: translate(-10%, -50%);
+    text-align: center;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 13px;
+    font-weight: 600;
+
+    
+}
+#preco_x4_3 {
+    position: absolute;
+    top: 60%;
+    left: 24%;
+    transform: translate(-10%, -50%);
+    text-align: center;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 27px;
+    color: red;
+    font-weight: 700;
+}
+
+#img_produto_x4_4 {
+  
+    position: absolute;
+    max-width: 135px;
+    max-height: 135px;
+    top: 53%;     
+    left: 38%;  
+    transform: translate(30%, -50%);
+    padding-right: 65px;
+    
+   
+}
+#descricao_x4_4 {
+    position: absolute;
+    top: 50%;
+    left: 73%; 
+    width: 150px;   
+    transform: translate(-10%, -50%);
+    text-align: center;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 13px;
+    font-weight: 600;
+
+    
+}
+#preco_x4_4 {
+    position: absolute;
+    top: 60%;
+    left: 74%;
+    transform: translate(-10%, -50%);
+    text-align: center;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 27px;
+    color: red;
+    font-weight: 700;
+}
+#divisoria {
+
+    margin-left: 50%;
+    height: 63%;    
+    width: 1px;
+    border:.5px solid;
+
+}
+#divisoria_horizontal{
+    height: .5px;
+    width: 100%;
+    margin-top: -28%;
+    border: 1px solid;
+}
