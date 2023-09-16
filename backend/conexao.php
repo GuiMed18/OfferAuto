@@ -3,9 +3,9 @@
 class Conexao{
 
     private $hostname = "localhost";
-    private $login = "filial140";
-    private $pw = "senhafilial";
-    private $db = "atc_portal";
+    private $login = "login";
+    private $pw = "password";
+    private $db = "db";
     
     function conectaDB(){
 
