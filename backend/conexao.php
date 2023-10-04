@@ -3,9 +3,9 @@
 class Conexao{
 
     private $hostname = "localhost";
-    private $login = "login";
-    private $pw = "password";
-    private $db = "db";
+    private $login = "gui1811";
+    private $pw = "Castanharo123.";
+    private $db = "teste";
     
     function conectaDB(){
 
