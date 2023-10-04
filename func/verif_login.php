@@ -32,7 +32,7 @@
 			$data = date('d/m/Y H:i');
 
 
-			$sql_log = "INSERT INTO log_pl (usuario,data,acao) VALUES ('$login','$data','login')";
+			$sql_log = "INSERT INTO log_ger_web (usuario,data) VALUES ('$login','$data')";
 			$insere_log = mysqli_query($connection,$sql_log);
 
 			if($_SESSION['usuarioNiveisAcessoId']) {

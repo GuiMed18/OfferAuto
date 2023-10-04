@@ -13,7 +13,7 @@ if (isset($_GET['criatb']) == false) {
     $tabelas = array("gerencial_web", "gerencial_web_srt", "gerencial_web_temp", "log_ger_web", "usuarios_ger_web");
 
 
-    if (!mysqli_connect_error($conecta)) {
+    if (mysqli_error($conecta) == FALSE) {
 
         #Valida se tabelas existe
         foreach ($tabelas as $tb) {
@@ -27,7 +27,7 @@ if (isset($_GET['criatb']) == false) {
                 $tb_existe = false;
             }
         }
-        if ($tb_existe === false) {
+        if (isset($tb_existe) && $tb_existe === false) {
             header("Location: func/tela_insere_tb.php");
         }
     } else { ?>
@@ -37,7 +37,7 @@ if (isset($_GET['criatb']) == false) {
 <?php }
 } ?>
 
-?>
+
 
         <head>
 

@@ -23,13 +23,13 @@ foreach($tabelas as $tb){
 
 
 
-if($tb_existe == true){
+if(isset($tb_existe) && $tb_existe == true){
     header("Location: ../func/tela_informativo.php"); 
  
 }else{
 
 
-$conecta->selecionaDB('atacadao');
+$conecta->selecionaDB('teste');
 
 $sqlFile = '../backend/tabelas.sql';
 $sqlCommands = file_get_contents($sqlFile);

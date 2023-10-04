@@ -21,7 +21,7 @@ if (!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true) {
 	<?php
 	include('head.php');
 	include('navbar.php');
-	include('cab_rod_cn/rodape.php');
+	
 	
 
 
